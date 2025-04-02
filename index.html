@@ -3,10 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css" />
-    <title>Document</title>
+    <title>Generador simple de  contraseña</title>
   </head>
   <body>
+    <main class="container">
+      <div>
+        <label for="password"></label>
+        <input class="input-default text" type="text" placeholder="P4$W0RD!" readonly  id="password"/>
+      </div>
+      <div class="generate-passwordbox">
+        <label for="range-length"></label>
+        <span class="text" value="0" readonly id="lenght-info">LENGTH: 8</span>
+        <div class="password-length-container text">
+        <span>4</span>
+        <input type="range" min="4" max="32" step="1"value="8" readonly id="range-length">
+        <span class="text">32</span>
+      </div>
+        <button class="button-default text" id="button">Generate password</button>
+      </div>
+    </main>
     <script src="./js/scripts.js"></script>
   </body>
 </html>
