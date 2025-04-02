@@ -34,6 +34,7 @@ input[type="range"]{
     height: 0.25rem;
     background-color: #fff;
     border: none;/* Me sigue saliendo un borde en el web */
+    accent-color: #7400E4
 }
 
 /*input[type="range"]::-webkit-slider-thumb{
@@ -42,10 +43,6 @@ input[type="range"]{
     border: 1px solid #fff;
     accent-color: #fff;
 }*/
-
-.range-slider{
-    accent-color: #7400E4
-}
 
 .container{
     display: flex;
@@ -109,4 +106,23 @@ input[type="range"]{
     background-image: linear-gradient(90deg, #7944E7 0%, #8300AB 100%);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) ;
     padding: 1rem;
+    transition: transform 0.16s ease-in-out;
+}
+
+@media screen and (min-width: 1080px){
+    body{
+        padding: 23.25rem 45.9375rem 26.1875rem 40.5625rem;
+    }
+    .container{
+        width: 536px;
+        padding: 10px;
+    }
+    .input-default{
+        height: 60px;
+        padding: 1rem 10.2rem;
+    }
+    .button-default:hover{
+        transform: scale(0.95);
+        transform-origin: center; /*Desde donde crece*/
+    }
 }
