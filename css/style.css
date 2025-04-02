@@ -31,8 +31,20 @@ body{
 
 input[type="range"]{
     width: 100%;
-    background-color: #FFF;
-    border: none;
+    height: 0.25rem;
+    background-color: #fff;
+    border: none;/* Me sigue saliendo un borde en el web */
+}
+
+/*input[type="range"]::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    background-color:#676767;
+    border: 1px solid #fff;
+    accent-color: #fff;
+}*/
+
+.range-slider{
+    accent-color: #7400E4
 }
 
 .container{
